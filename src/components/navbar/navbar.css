@@ -1,0 +1,12 @@
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.links-container {
+    display: flex;
+}
