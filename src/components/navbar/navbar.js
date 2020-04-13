@@ -1,26 +1,39 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
 //styles
 import './navbar.css'
 
-const linkStyles = {
-    color: '#58b368',
-    fontSize: '20px',
-    textDecoration: 'none'
-}
+const StyledLink = styled(Link)`
+    font-size: 20px;
+    text-decoration: none;
+    color: #58b368;
+    :hover {
+        text-decoration: underline;
+    }
+`
+const HomeLink = styled(Link)`
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    :hover {
+        color: #58b368;
+        text-decoration: underline; 
+    }
+`
 
 const Navbar = () => (
     <div className={`nav-container`}>
         <div>
-            <p style={{fontSize: '20px'}}>Nicolas Camacho</p>
+            <HomeLink to="/">Nicolas Camacho</HomeLink>
         </div>
         <div className={`links-container`}>
             <p>
-                <Link style={linkStyles}>projects</Link>
+                <StyledLink to="/projects">projects</StyledLink>
                 <span> - </span>
-                <Link style={linkStyles}>blog</Link>
+                <StyledLink to="/blog">blog</StyledLink>
                 <span> - </span>
-                <Link style={linkStyles}>interests</Link>
+                <StyledLink to="/interests">interests</StyledLink>
             </p>
         </div>
     </div>

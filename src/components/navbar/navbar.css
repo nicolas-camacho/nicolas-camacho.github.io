@@ -10,3 +10,7 @@
 .links-container {
     display: flex;
 }
+
+a:hover, a:active, a:focus {
+    outline: 0;
+}
