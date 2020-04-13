@@ -1,14 +1,19 @@
 .nav-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     align-items: center;
-    text-align: center;
 }
 
 .links-container {
     display: flex;
+}
+
+@media(min-width: 600px) {
+    .nav-container {
+        justify-content: space-between;
+    }
 }
 
 a:hover, a:active, a:focus {

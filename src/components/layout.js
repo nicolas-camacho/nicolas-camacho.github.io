@@ -3,6 +3,7 @@ import React from 'react'
 import '../styles/layout.css'
 //components
 import Navbar from './navbar/navbar'
+import Footer from './footer/footer'
 
 const Layout = ({children}) => (
     <>
@@ -12,6 +13,9 @@ const Layout = ({children}) => (
                 <Navbar />
                 <hr className={`separator`}></hr>
                 {children}
+                <br/>
+                <hr className={`separator`}></hr>
+                <Footer />
             </div>
         </div>
     </>

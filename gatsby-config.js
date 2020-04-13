@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Nicolas Camacho`,
+        short_name: `Nicolas Camacho`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#58b368`,
+        theme_color: `#58b368`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/coffee.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-styled-components`,
